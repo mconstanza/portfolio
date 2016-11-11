@@ -1,0 +1,22 @@
+{
+  "name": "mconstanza.github.io",
+  "version": "1.0.0",
+  "description": "Personal portfolio website for Mike Constanza",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mconstanza/mconstanza.github.io.git"
+  },
+  "author": "Michael Constanza",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mconstanza/mconstanza.github.io/issues"
+  },
+  "homepage": "https://github.com/mconstanza/mconstanza.github.io#readme",
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}
