@@ -419,3 +419,11 @@ img::-moz-selection {
 body {
   webkit-tap-highlight-color: #222222;
 }
+
+.icon {
+  max-width: 32px;
+}
+
+.nav>li>a>img {
+    max-width: 22px;
+}
