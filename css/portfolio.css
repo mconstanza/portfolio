@@ -225,6 +225,11 @@ header .header-content .header-content-inner p {
   margin-top: 0;
 }
 
+#profileImage {
+  max-width: 240px;
+  border-radius: 20px;
+}
+
 @media (min-width: 992px) {
 
 .portfolio-box {
