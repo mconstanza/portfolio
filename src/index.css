@@ -2,14 +2,39 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-}
+  font-family: 'Ubuntu Condensed', sans-serif;
 
+}
+/*NAVBAR********************************************************/
 .navbar {
   margin-bottom: 0;
   border-radius: 0;
+  background-color: #540000;
+  font-family: 'Ubuntu Condensed', sans-serif;
 }
-
+/*HEADER********************************************************/
 #header-image {
   max-height: 400px;
   width: 100%;
+}
+
+/*SKILLS********************************************************/
+
+#skillsHeader {
+  margin-bottom: 30px;
+}
+
+#skillsList {
+  list-style: none;
+  display: inline-block;
+}
+
+.skill {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.skill-icon {
+  max-width: 48px;
+  max-height: 48px;
 }
