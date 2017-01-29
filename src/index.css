@@ -3,13 +3,22 @@ body {
   padding: 0;
   font-family: sans-serif;
   font-family: 'Ubuntu Condensed', sans-serif;
+}
 
+html, body {
+  height: 100%;
 }
 
 /*Default row class causes x overflow. This clears it.*/
 .row {
   margin-left: 0;
   margin-right: 0;
+}
+
+.container {
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .heading {
@@ -26,16 +35,28 @@ body {
   margin-bottom: 40px;
 }
 /*NAVBAR********************************************************/
-.navbar {
+#navbar {
   margin-bottom: 0;
   border-radius: 0;
   background-color: #540000;
-  background: -webkit-linear-gradient(black, #540000); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(black, #540000); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(black, #540000); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(black, #540000); /* Standard syntax */
+  background: -webkit-linear-gradient(#540000 80%, white); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#540000 80%, white); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#540000 80%, white); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#540000 80%, white); /* Standard syntax */
   font-family: 'Ubuntu Condensed', sans-serif;
 
+}
+
+.navbar-brand {
+  padding-bottom: 25px;
+  padding-top: 5px;
+}
+
+#navLogo{
+  max-width: 30px;
+  display: inline-block;
+  margin-right: 5px;
+  padding-bottom: 10px;
 }
 /*HEADER********************************************************/
 #header-image {
@@ -58,8 +79,6 @@ body {
 }
 /*SKILLS********************************************************/
 
-
-
 #skillsList {
   list-style: none;
   display: inline-block;
@@ -73,6 +92,9 @@ body {
 
 .skill:hover {
   opacity: 1;
+  -webkit-transition-duration: .3s; /* Safari */
+  transition-duration: .3s;
+  transform: translateY(-5px);
 }
 
 .skill a {
@@ -82,4 +104,68 @@ body {
 .skill-icon {
   max-width: 48px;
   max-height: 48px;
+}
+
+/*FOOTER********************************************************/
+
+#footer {
+  margin-bottom: 0;
+  border-top: none;
+  min-height: 100px;
+  background-color: #540000;
+  background: -webkit-linear-gradient(white 5%, #540000 90%); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(white 5%, #540000 90%); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(white 5%, #540000 90%); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(white 5%, #540000 90%); /* Standard syntax */
+  font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+#socialLinks {
+  display: inline-block;
+}
+
+.socialLink {
+  display: inline-block;
+
+}
+
+.icon {
+  max-width: 50px;
+  max-height: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.icon:hover {
+  -webkit-transition-duration: .3s; /* Safari */
+  transition-duration: .3s;
+  transform: translateY(-5px);
+}
+
+
+
+/*SCROLLBAR*/
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.9);
+	border-radius: 10px;
+	background-color: #540000;
+}
+
+::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #540000;
+}
+
+::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	background-color: white;
+  border: 1px solid #540000;
+	background-image: -webkit-linear-gradient(90deg,
+											  transparent,
+											  rgba(84, 0, 0, 0) 50%,
+											  transparent,
+											  transparent)
 }

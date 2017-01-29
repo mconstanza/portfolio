@@ -4,9 +4,9 @@ class Navbar extends Component {
   render() {
     return (
       <div className="row">
-        <div className="navbar navbar-inverse">
+        <div id="navbar" className="navbar navbar-inverse">
           <div className="container-fluid">
-            <a className="navbar-brand" href="#">M Constanza</a>
+            <a className="navbar-brand" href="#"><img id="navLogo" src="./img/glasses-128.png"/> M Constanza</a>
             <ul className="nav navbar-nav navbar-right">
               <li><a href="#about">About</a></li>
               <li><a href="#skills">Skills</a></li>
