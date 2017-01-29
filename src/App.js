@@ -3,6 +3,7 @@ import './App.css';
 
 import Navbar from './components/Navbar'
 import Header from './components/Header'
+import About from './components/About'
 import Skills from './components/Skills'
 
 class App extends Component {
@@ -11,8 +12,9 @@ class App extends Component {
       <div className="App">
           <Navbar/>
           <Header/>
-          {/* <About/> */}
+          <About/>
           <Skills/>
+          {/* <Footer/> */}
       </div>
     );
   }

@@ -5,12 +5,37 @@ body {
   font-family: 'Ubuntu Condensed', sans-serif;
 
 }
+
+/*Default row class causes x overflow. This clears it.*/
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.heading {
+  margin-bottom: 30px;
+  color: #540000;
+  margin-bottom: 20px;
+}
+
+.hUnderline {
+  background-color: #540000;
+  width: 200px;
+  height: 3px;
+  margin-top: 0;
+  margin-bottom: 40px;
+}
 /*NAVBAR********************************************************/
 .navbar {
   margin-bottom: 0;
   border-radius: 0;
   background-color: #540000;
+  background: -webkit-linear-gradient(black, #540000); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(black, #540000); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(black, #540000); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(black, #540000); /* Standard syntax */
   font-family: 'Ubuntu Condensed', sans-serif;
+
 }
 /*HEADER********************************************************/
 #header-image {
@@ -18,11 +43,22 @@ body {
   width: 100%;
 }
 
+/*ABOUT**********************************************************/
+#profileImage {
+  max-width: 300px;
+  border-radius: 75%;
+}
+
+.aboutText {
+  font-size: 20px;
+}
+
+#aboutTextDiv {
+  text-align: left;
+}
 /*SKILLS********************************************************/
 
-#skillsHeader {
-  margin-bottom: 30px;
-}
+
 
 #skillsList {
   list-style: none;
@@ -32,6 +68,15 @@ body {
 .skill {
   display: inline-block;
   margin: 0 20px;
+  opacity: .8;
+}
+
+.skill:hover {
+  opacity: 1;
+}
+
+.skill a {
+  color: #540000;
 }
 
 .skill-icon {
