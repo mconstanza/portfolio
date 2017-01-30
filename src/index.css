@@ -33,6 +33,7 @@ html, body {
   height: 3px;
   margin-top: 0;
   margin-bottom: 40px;
+  border-top: 0;
 }
 /*NAVBAR********************************************************/
 #navbar {
@@ -59,12 +60,45 @@ html, body {
   padding-bottom: 10px;
 }
 /*HEADER********************************************************/
+#header {
+  position: relative;
+}
+
+#homeHeading {
+  color: white;
+  font-size: 42px;
+  text-shadow: 2px 2px black;
+}
+
 #header-image {
-  max-height: 400px;
+  max-height: 700px;
   width: 100%;
 }
 
+.header-content-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  -ms-align-items: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-content-inner p{
+  color:white;
+  font-size: 20px;
+}
+
 /*ABOUT**********************************************************/
+
+#about {
+  /*height: 100vh;*/
+}
+
 #profileImage {
   max-width: 300px;
   border-radius: 75%;
@@ -75,9 +109,21 @@ html, body {
 }
 
 #aboutTextDiv {
+  height: 300px;
   text-align: left;
+  display: flex;
+  -ms-align-items: center;
+  align-items: center;
 }
 /*SKILLS********************************************************/
+
+#skills {
+  /*height: 100vh;*/
+  display: flex;
+  -ms-align-items: center;
+  align-items: center;
+  justify-content: center;
+}
 
 #skillsList {
   list-style: none;
@@ -106,11 +152,87 @@ html, body {
   max-height: 48px;
 }
 
+/*PORTFOLIO********************************************************/
+
+#portfolio {
+  /*height: 100vh;*/
+  display: flex;
+  -ms-align-items: center;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
+#portfolioDiv{
+  text-align: center;
+  /*display: flex;*/
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.carousel{
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.carousel-inner{
+  border-radius: 10px;
+}
+
+.projectImg {
+  max-width: 600px;
+  border-radius: 10px;
+}
+
+.project {
+  position: relative;
+  display: inline-block;
+  max-width: 600px;
+}
+
+.projectOverlay {
+  position: absolute;
+  background-color: black;
+  top: 0;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  border-radius: 10px;
+  display: flex;
+  -ms-align-items: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.projectOverlay:hover {
+  opacity: .9;
+  -webkit-transition-duration: .3s; /* Safari */
+  transition-duration: .3s;
+}
+
+.projectDeployIcon, .projectGitIcon {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.projectGitIcon:hover{
+  -webkit-transition-duration: .3s; /* Safari */
+  transition-duration: .3s;
+  transform: translateY(-5px);
+}
+
+.projectDeployIcon:hover {
+  -webkit-transition-duration: .3s; /* Safari */
+  transition-duration: .3s;
+  transform: translateY(-5px);
+}
+
 /*FOOTER********************************************************/
 
 #footer {
   margin-bottom: 0;
-  border-top: none;
+  border: none;
   min-height: 100px;
   background-color: #540000;
   background: -webkit-linear-gradient(white 5%, #540000 90%); /* For Safari 5.1 to 6.0 */

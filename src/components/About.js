@@ -5,7 +5,7 @@ class About extends Component {
     return (
 
       <section className="row" id="about">
-        <div id="aboutDiv">
+        {/* <div id="aboutDiv"> */}
           <h2 className="heading" id="aboutHeader">About</h2>
           <hr className="hUnderline"/>
           <div className="col-md-2"></div>
@@ -20,7 +20,7 @@ class About extends Component {
               I want to help you build cool things. Check out what I've been making while learning.
             </p>
           </div>
-        </div>
+        {/* </div> */}
       </section>
 
     );
