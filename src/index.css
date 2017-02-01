@@ -15,6 +15,10 @@ html, body {
   margin-right: 0;
 }
 
+ul {
+  padding-left: 0;
+}
+
 .container {
   width: 100%;
   padding-left: 0;
@@ -59,6 +63,12 @@ html, body {
   margin-right: 5px;
   padding-bottom: 10px;
 }
+
+.navbarSocial {
+  display: inline-block;
+  padding-top: 10px;
+}
+
 /*HEADER********************************************************/
 #header {
   position: relative;
@@ -100,8 +110,9 @@ html, body {
 }
 
 #profileImage {
-  max-width: 300px;
+  max-width: 90%;
   border-radius: 75%;
+  min-width: 200px;
 }
 
 .aboutText {
@@ -120,14 +131,15 @@ html, body {
 #skills {
   /*height: 100vh;*/
   display: flex;
-  -ms-align-items: center;
-  align-items: center;
+  /*-ms-align-items: center;
+  align-items: center;*/
   justify-content: center;
 }
 
 #skillsList {
   list-style: none;
   display: inline-block;
+  width: 50%;
 }
 
 .skill {
@@ -148,8 +160,10 @@ html, body {
 }
 
 .skill-icon {
-  max-width: 48px;
-  max-height: 48px;
+  min-width: 48px;
+  min-height: 48px;
+  max-width: 60px;
+  max-height: 65px;
 }
 
 /*PORTFOLIO********************************************************/
@@ -157,12 +171,10 @@ html, body {
 #portfolio {
   /*height: 100vh;*/
   display: flex;
-  -ms-align-items: center;
-  align-items: center;
+  /*-ms-align-items: center;
+  align-items: center;*/
   justify-content: center;
-
 }
-
 
 #portfolioDiv{
   text-align: center;
@@ -172,7 +184,7 @@ html, body {
 }
 
 .carousel{
-  max-width: 600px;
+  max-width: 100%;
   margin: 0 auto;
 }
 
@@ -181,7 +193,7 @@ html, body {
 }
 
 .projectImg {
-  max-width: 600px;
+  max-width: 100%;
   border-radius: 10px;
 }
 
@@ -233,7 +245,7 @@ html, body {
 #footer {
   margin-bottom: 0;
   border: none;
-  min-height: 100px;
+  min-height: 150px;
   background-color: #540000;
   background: -webkit-linear-gradient(white 5%, #540000 90%); /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(white 5%, #540000 90%); /* For Opera 11.1 to 12.0 */
@@ -242,20 +254,28 @@ html, body {
   font-family: 'Ubuntu Condensed', sans-serif;
 }
 
-#socialLinks {
+.socialLinks {
   display: inline-block;
 }
 
 .socialLink {
   display: inline-block;
+}
 
+.footerNameDiv {
+  margin-top: 100px;
+  color: white;
+}
+
+.footerNameDiv .socialLinks {
+  margin-left: 20px;
 }
 
 .icon {
-  max-width: 50px;
-  max-height: 50px;
-  margin-left: 10px;
-  margin-right: 10px;
+  max-width: 25px;
+  max-height: 25px;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .icon:hover {
@@ -290,4 +310,31 @@ html, body {
 											  rgba(84, 0, 0, 0) 50%,
 											  transparent,
 											  transparent)
+}
+
+/*Desktop*/
+@media only screen and (min-width: 768px) {
+
+  #about {
+    height: 100vh;
+  }
+
+
+  #skills {
+    height: 100vh;
+  }
+
+  #portfolio {
+    height: 100vh;
+  }
+
+  .carousel{
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .projectImg {
+    max-width: 600px;
+  }
+
 }

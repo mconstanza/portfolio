@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Social from './Social';
 
 class Footer extends Component {
   render() {
@@ -6,30 +7,11 @@ class Footer extends Component {
       <section id="contact" className="row">
         <div id="footer" className="navbar navbar-inverse">
           <div className="container-fluid">
-            <ul id="socialLinks">
-              <li className = "socialLink">
-                  <a target="_blank" href="mailto:michael.constanza@gmail.com">
-                      <img className="icon hvr-float" src="img/message-closed-envelope.png" alt="email me @ michael.constanza@gmail.com"/>
-                  </a>
-              </li>
-              <li className = "socialLink">
-                  <a target="_blank" href="https://github.com/mconstanza">
-                      <img className="icon hvr-float" src="img/github_64.png" alt="github"/>
-                  </a>
-              </li>
+            <div className="footerNameDiv">
+              Made by Michael Constanza - Goonies never say die
+              <Social/>
+            </div>
 
-              <li className = "socialLink">
-                  <a target="_blank" href="https://www.linkedin.com/in/michael-constanza-0b2b1152">
-                      <img className="icon hvr-float" src="img/linkedin_circle_color.png" alt="linkedin"/>
-                  </a>
-              </li>
-
-              <li className = "socialLink">
-                  <a target="_blank" href="http://stackoverflow.com/users/6605649/michael-constanza">
-                      <img className="icon hvr-float" src="img/Stack_Overflow_64.png" alt="stack overflow"/>
-                  </a>
-              </li>
-            </ul>
           </div>
         </div>
       </section>
