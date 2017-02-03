@@ -25,9 +25,9 @@ class Portfolio extends Component {
     return (
 
       <section className="row" id="portfolio">
+        <h2 className="headingRed" id="portfolioHeader">Portfolio</h2>
+        <hr className="hUnderline"/>
         <div id="portfolioDiv">
-          <h2 className="headingRed" id="aboutHeader">Portfolio</h2>
-          <hr className="hUnderline"/>
           <Carousel>
             {this.renderProjects()}
           </Carousel>

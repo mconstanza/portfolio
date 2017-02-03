@@ -42,7 +42,7 @@ ul {
   width: 200px;
   height: 3px;
   margin-top: 0;
-  margin-bottom: 40px;
+  /*margin-bottom: 40px;*/
 }
 /*NAVBAR********************************************************/
 #navbar {
@@ -119,18 +119,20 @@ ul {
 #about {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+
 }
 
 #aboutContentDiv {
   display: flex;
-  flex-flow: row;
-  justify-content: flex-start;
-  width: 100%
+  justify-content: center;
+  -ms-align-items: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
 }
 
 #profileImage {
-  max-width: 90%;
+  max-width: 70%;
   border-radius: 75%;
   min-width: 200px;
 }
@@ -150,28 +152,31 @@ ul {
 /*SKILLS********************************************************/
 
 #skills {
-  display: flex;
-  flex-flow: column;
-  -ms-align-items: center;
-  align-items: center;
+  /*display: flex;*/
   background-color: #540000;
   color: white;
+  text-align: center;
+  width: 100%;
+}
+
+#skillsHeader {
+  /*align-self: flex-start;*/
+  width: 100%;
 }
 
 #skillsList {
   list-style: none;
   display: inline-block;
-  width: 100%;
-  margin-top: 50px;
+  width: 50%;
+  margin: auto;
+  margin-top: 90px;
 }
 
 #skillListContainer {
   display: flex;
-  width: 50%;
+  width: 100%;
   height: 100%;
-  /*-ms-align-items: center;
-  align-items: center;*/
-  justify-content: center;
+  text-align: center;
 
 }
 
@@ -203,24 +208,24 @@ ul {
 /*PORTFOLIO********************************************************/
 
 #portfolio {
-  /*height: 100vh;*/
   display: flex;
-  /*-ms-align-items: center;
-  align-items: center;*/
-  justify-content: center;
+  flex-flow: column;
+  -ms-align-items: center;
+  align-items: center;
+  /*justify-content: center;*/
 }
 
 #portfolioDiv{
   width: 50%;
+  height: 100%;
   text-align: center;
-  /*display: flex;*/
-  justify-content: center;
-  margin-bottom: 50px;
+  display: flex;
+  -ms-align-items: center;
+  align-items: center;
 }
 
 .carousel{
   max-width: 100%;
-  margin: 0 auto;
 }
 
 .carousel-inner{
@@ -362,10 +367,9 @@ ul {
   }
 
   #profileImage {
-    max-width: 90%;
+    max-width: 75%;
     border-radius: 75%;
     min-width: 200px;
-    margin-left: 75px;
   }
 
   #skills {

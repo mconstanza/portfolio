@@ -7,8 +7,10 @@ class Skills extends Component {
     return (
 
       <section id="skills" className="row">
-          <h2 id="skillsHeader" className="headingWhite">Skills</h2>
+        <div id="skillsHeader">
+          <h2 className="headingWhite">Skills</h2>
           <hr className="hUnderline"/>
+        </div>
             <div id="skillListContainer">
               <ul id="skillsList">
                 <Skill skill="HTML" icon="./img/skills/html.png" link="https://www.w3.org/TR/html5/"/>

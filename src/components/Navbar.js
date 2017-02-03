@@ -8,9 +8,6 @@ class Navbar extends Component {
         <div id="navbar" className="navbar navbar-inverse">
           <div className="container-fluid">
             <a className="navbar-brand" href="#"><img id="navLogo" src="./img/glasses-128.png"/> M Constanza</a>
-            <div className = "navbarSocial">
-              <Social/>
-            </div>
             <ul className="nav navbar-nav navbar-right">
               <li><a href="#about">About</a></li>
               <li><a href="#skills">Skills</a></li>
