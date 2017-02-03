@@ -25,9 +25,15 @@ ul {
   padding-right: 0;
 }
 
-.heading {
+.headingRed {
   margin-bottom: 30px;
   color: #540000;
+  margin-bottom: 20px;
+}
+
+.headingWhite {
+  margin-bottom: 30px;
+  color: white;
   margin-bottom: 20px;
 }
 
@@ -37,17 +43,18 @@ ul {
   height: 3px;
   margin-top: 0;
   margin-bottom: 40px;
-  border-top: 0;
 }
 /*NAVBAR********************************************************/
 #navbar {
   margin-bottom: 0;
   border-radius: 0;
   background-color: white;
-  background: -webkit-linear-gradient(white 80%, #540000); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(white 80%, #540000); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(white 80%, #540000); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(white 80%, #540000); /* Standard syntax */
+  background: white;
+  border-width: 0px;
+  /*background: -webkit-linear-gradient(white 80%, #540000); /* For Safari 5.1 to 6.0 */*/
+  /*background: -o-linear-gradient(white 80%, #540000); /* For Opera 11.1 to 12.0 */*/
+  /*background: -moz-linear-gradient(white 80%, #540000); /* For Firefox 3.6 to 15 */*/
+  /*background: linear-gradient(white 80%, #540000); /* Standard syntax */*/
   font-family: 'Ubuntu Condensed', sans-serif;
 
 }
@@ -110,7 +117,16 @@ ul {
 /*ABOUT**********************************************************/
 
 #about {
-  /*height: 100vh;*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#aboutContentDiv {
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-start;
+  width: 100%
 }
 
 #profileImage {
@@ -124,7 +140,8 @@ ul {
 }
 
 #aboutTextDiv {
-  height: 300px;
+  max-height: 300px;
+  max-width: 600px;
   text-align: left;
   display: flex;
   -ms-align-items: center;
@@ -133,23 +150,36 @@ ul {
 /*SKILLS********************************************************/
 
 #skills {
-  /*height: 100vh;*/
   display: flex;
-  /*-ms-align-items: center;
-  align-items: center;*/
-  justify-content: center;
+  flex-flow: column;
+  -ms-align-items: center;
+  align-items: center;
+  background-color: #540000;
+  color: white;
 }
 
 #skillsList {
   list-style: none;
   display: inline-block;
+  width: 100%;
+  margin-top: 50px;
+}
+
+#skillListContainer {
+  display: flex;
   width: 50%;
+  height: 100%;
+  /*-ms-align-items: center;
+  align-items: center;*/
+  justify-content: center;
+
 }
 
 .skill {
   display: inline-block;
   margin: 0 20px;
   opacity: .8;
+  margin-bottom: 25px;
 }
 
 .skill:hover {
@@ -160,7 +190,7 @@ ul {
 }
 
 .skill a {
-  color: #540000;
+  color: white;
 }
 
 .skill-icon {
@@ -253,10 +283,11 @@ ul {
   min-height: 50px;
   height: 75px;
   background-color: #540000;
-  background: -webkit-linear-gradient(white 5%, #540000 90%); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(white 5%, #540000 90%); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(white 5%, #540000 90%); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(white 5%, #540000 90%); /* Standard syntax */
+  background:  #540000;
+  /*background: -webkit-linear-gradient(white 5%, #540000 90%); /* For Safari 5.1 to 6.0 */*/
+  /*background: -o-linear-gradient(white 5%, #540000 90%); /* For Opera 11.1 to 12.0 */*/
+  /*background: -moz-linear-gradient(white 5%, #540000 90%); /* For Firefox 3.6 to 15 */*/
+  /*background: linear-gradient(white 5%, #540000 90%); /* Standard syntax */*/
   font-family: 'Ubuntu Condensed', sans-serif;
 }
 
@@ -328,6 +359,13 @@ ul {
   #about {
     min-height: 600px;
     height: 90vh;
+  }
+
+  #profileImage {
+    max-width: 90%;
+    border-radius: 75%;
+    min-width: 200px;
+    margin-left: 75px;
   }
 
   #skills {
