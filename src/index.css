@@ -43,11 +43,11 @@ ul {
 #navbar {
   margin-bottom: 0;
   border-radius: 0;
-  background-color: #540000;
-  background: -webkit-linear-gradient(#540000 80%, white); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(#540000 80%, white); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(#540000 80%, white); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(#540000 80%, white); /* Standard syntax */
+  background-color: white;
+  background: -webkit-linear-gradient(white 80%, #540000); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(white 80%, #540000); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(white 80%, #540000); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(white 80%, #540000); /* Standard syntax */
   font-family: 'Ubuntu Condensed', sans-serif;
 
 }
@@ -67,6 +67,10 @@ ul {
 .navbarSocial {
   display: inline-block;
   padding-top: 10px;
+}
+
+#navbar li a:hover{
+  color: #540000;
 }
 
 /*HEADER********************************************************/
@@ -177,6 +181,7 @@ ul {
 }
 
 #portfolioDiv{
+  width: 50%;
   text-align: center;
   /*display: flex;*/
   justify-content: center;
@@ -245,13 +250,18 @@ ul {
 #footer {
   margin-bottom: 0;
   border: none;
-  min-height: 150px;
+  min-height: 50px;
+  height: 75px;
   background-color: #540000;
   background: -webkit-linear-gradient(white 5%, #540000 90%); /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(white 5%, #540000 90%); /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient(white 5%, #540000 90%); /* For Firefox 3.6 to 15 */
   background: linear-gradient(white 5%, #540000 90%); /* Standard syntax */
   font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+#footer .container-fluid {
+  height: 100%;
 }
 
 .socialLinks {
@@ -263,7 +273,7 @@ ul {
 }
 
 .footerNameDiv {
-  margin-top: 100px;
+  margin-top: 30px;
   color: white;
 }
 
@@ -316,25 +326,27 @@ ul {
 @media only screen and (min-width: 768px) {
 
   #about {
-    height: 100vh;
+    min-height: 600px;
+    height: 90vh;
   }
 
-
   #skills {
-    height: 100vh;
+    min-height: 600px;
+    height: 90vh;
   }
 
   #portfolio {
-    height: 100vh;
+    min-height: 600px;
+    height: 90vh;
   }
 
   .carousel{
-    max-width: 600px;
+    max-width: 75%;
     margin: 0 auto;
   }
 
   .projectImg {
-    max-width: 600px;
+    max-width: 100%;
   }
 
 }

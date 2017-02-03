@@ -11,7 +11,6 @@ class Footer extends Component {
               Made by Michael Constanza - Goonies never say die
               <Social/>
             </div>
-
           </div>
         </div>
       </section>

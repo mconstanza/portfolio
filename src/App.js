@@ -9,13 +9,17 @@ import Skills from './components/Skills'
 import Portfolio from './components/Portfolio'
 import Footer from './components/Footer'
 
+import Headroom from 'react-headroom';
+
 // Define App
 class App extends Component {
   render() {
     return (
       <div className="App">
         <div className="container">
-          <Navbar/>
+          <Headroom>
+            <Navbar/>
+          </Headroom>
           <Header/>
           <About/>
           <Skills/>
