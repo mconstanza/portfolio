@@ -254,6 +254,7 @@ ul {
 .projectOverlay {
   position: absolute;
   background-color: black;
+  color: white;
   top: 0;
   opacity: 0;
   width: 100%;
@@ -261,6 +262,7 @@ ul {
   z-index: 1000;
   border-radius: 10px;
   display: flex;
+  flex-direction: column;
   -ms-align-items: center;
   align-items: center;
   justify-content: center;
@@ -275,6 +277,7 @@ ul {
 .projectDeployIcon, .projectGitIcon {
   margin-left: 20px;
   margin-right: 20px;
+  margin-top: 20px;
 }
 .projectGitIcon:hover{
   -webkit-transition-duration: .3s; /* Safari */

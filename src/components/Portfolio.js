@@ -28,7 +28,7 @@ class Portfolio extends Component {
         <h2 className="headingRed" id="portfolioHeader">Portfolio</h2>
         <hr className="hUnderline"/>
         <div id="portfolioDiv">
-          <Carousel>
+          <Carousel indicators={false}>
             {this.renderProjects()}
           </Carousel>
         </div>

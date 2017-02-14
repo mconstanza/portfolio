@@ -17,6 +17,14 @@ export default [
   },
 
   {
+    name: 'Reddit Bot for Hackathon',
+    tag: 'All the articles',
+    url: "",
+    git: "https://github.com/mconstanza/redditBotHackathon",
+    image: "./img/portfolio/thumbnails/RedditBot.png"
+  },
+
+  {
     name: 'NYT-React',
     tag: 'Search and Save NYT Articles',
     url: "https://nyt-reaction.herokuapp.com/",
