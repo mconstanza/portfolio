@@ -1,11 +1,27 @@
 export default [
 
   {
+    name: 'Study Moar!',
+    tag: 'Study help from the best of the web!',
+    url: 'http://study-moar.herokuapp.com/',
+    git: "https://github.com/mconstanza/Study-Moar",
+    image: "./img/portfolio/thumbnails/StudyMoar.png"
+  },
+
+  {
+    name: 'Twitch Avid',
+    tag: 'So...many...streams...',
+    url: 'http://twitchavid.herokuapp.com/',
+    git: "https://github.com/mconstanza/TwitchAvidReact",
+    image: "./img/portfolio/thumbnails/TwitchAvid.png"
+  },
+
+  {
     name: 'NYT-React',
     tag: 'Search and Save NYT Articles',
     url: "https://nyt-reaction.herokuapp.com/",
     git: "https://github.com/mconstanza/nytreact",
-    image: "./img/portfolio/thumbnails/NYTLogo.jpg"
+    image: "./img/portfolio/thumbnails/NYTReact.png"
   },
   {
     name: 'ReReddit: reddit /aww Scraper',
@@ -19,7 +35,7 @@ export default [
     tag: 'SAT Score Reporter',
     url: 'https://satmodel.herokuapp.com/',
     git: 'https://github.com/mconstanza/SATModel',
-    image: "./img/portfolio/thumbnails/standardLogo2.png"
+    image: "./img/portfolio/thumbnails/theStandard.png"
   },
   {
     name: 'Do Me! ToDo App',
@@ -33,15 +49,15 @@ export default [
     tag: 'Find gifs for your favorite movies!',
     url: 'https://movie-gipharu.herokuapp.com/',
     git: 'https://github.com/mconstanza/GiphyAPI',
-    image: './img/portfolio/thumbnails/Movie-Gipharu.jpg'
-  },
-  {
-    name: 'Node Hangman',
-    tag: '',
-    url: '',
-    git: 'https://github.com/mconstanza/Hanged',
-    image: './img/portfolio/thumbnails/Hanged.jpg'
+    image: './img/portfolio/thumbnails/MovieGipharu.png'
   }
+  // {
+  //   name: 'Node Hangman',
+  //   tag: '',
+  //   url: '',
+  //   git: 'https://github.com/mconstanza/Hanged',
+  //   image: './img/portfolio/thumbnails/Hanged.jpg'
+  // }
 
 
 ]

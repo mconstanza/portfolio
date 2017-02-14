@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 
 // Import Components
-import Navbar from './components/Navbar'
+import Navigation from './components/Navbar'
 import Header from './components/Header'
 import About from './components/About'
 import Skills from './components/Skills'
@@ -18,7 +18,7 @@ class App extends Component {
       <div className="App">
         <div className="container">
           <Headroom>
-            <Navbar/>
+            <Navigation/>
           </Headroom>
           <Header/>
           <About/>
