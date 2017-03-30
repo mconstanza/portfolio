@@ -1,6 +1,13 @@
 export default [
 
   {
+    name: 'Watch Over',
+    tag: 'Overwatch statistics analysis',
+    url: 'https://mconstanza.github.io/watchOver/',
+    git: "https://github.com/mconstanza/watchOver",
+    image: "./img/portfolio/thumbnails/WatchOver.png"
+  },
+  {
     name: 'Study Moar!',
     tag: 'Study help from the best of the web!',
     url: 'http://study-moar.herokuapp.com/',

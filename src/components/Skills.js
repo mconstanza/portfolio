@@ -27,6 +27,7 @@ class Skills extends Component {
                 <Skill skill="MVC Architecture" icon="./img/skills/curly_braces.png" link="https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller"/>
                 <Skill skill="RESTful Services" icon="./img/skills/curly_braces.png" link="https://en.wikipedia.org/wiki/Representational_state_transfer"/>
                 <Skill skill="React.js" icon="./img/skills/react.png" link="https://facebook.github.io/react/"/>
+                <Skill skill="Vue.js" icon="./img/skills/vue.png" link="https://vuejs.org/"/>
             </ul>
           </div>
       </section>
