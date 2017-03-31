@@ -3,8 +3,8 @@ export default [
   {
     name: 'Watch Over',
     tag: 'Overwatch statistics analysis',
-    url: 'https://mconstanza.github.io/watchOver/',
-    git: "https://github.com/mconstanza/watchOver",
+    url: 'https://mconstanza.github.io/watchover/',
+    git: "https://github.com/mconstanza/watchover",
     image: "./img/portfolio/thumbnails/WatchOver.png"
   },
   {
