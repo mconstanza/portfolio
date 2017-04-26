@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Panel} from 'react-bootstrap';
 
 class Project extends Component {
 
@@ -17,17 +18,21 @@ class Project extends Component {
   render() {
     return (
 
-        <div className="project">
-          <img className="projectImg" src={this.props.image}/>
-          <div className="projectOverlay">
-            <div className="projectName">
-              <h2>{this.props.name}</h2>
-              <h3>{this.props.tag}</h3>
+        <Panel header={this.props.name} bsStyle={null} className="project">
+          <div className="projectContent">
+            <img className="projectImg" src={this.props.image}/>
+            <div className="projectOverlay">
+              <div className="projectName">
+                <h2>{this.props.name}</h2>
+                <h3>{this.props.tag}</h3>
+              </div>
+              <div className="projectIconContainer">
+                {this.url()}
+                {this.git()}
+              </div>
             </div>
-            {this.url()}
-            {this.git()}
           </div>
-        </div>
+        </Panel>
 
     );
   }
