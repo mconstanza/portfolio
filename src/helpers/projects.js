@@ -2,7 +2,7 @@ export default [
 
   {
     name: 'Watch Over',
-    tag: 'Overwatch statistics analysis',
+    tag: 'Overwatch statistics analysis (WIP)',
     url: 'https://mconstanza.github.io/watchover/',
     git: "https://github.com/mconstanza/watchover",
     image: "./img/portfolio/thumbnails/WatchOver.png"
