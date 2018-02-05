@@ -45,6 +45,14 @@ ul {
   margin-top: 0;
   /*margin-bottom: 40px;*/
 }
+
+.hUnderlineWhite {
+  background-color: white;
+  width: 200px;
+  height: 3px;
+  margin-top: 0;
+  /*margin-bottom: 40px;*/
+}
 /*NAVBAR********************************************************/
 #navbar {
   margin-bottom: 0;
@@ -62,10 +70,10 @@ ul {
   color: black;
 }
 
-.navbar-brand {
+/* .navbar-brand {
   padding-bottom: 25px;
   padding-top: 5px;
-}
+} */
 
 #navbarBrand:hover {
   color: #540000;
@@ -99,7 +107,7 @@ ul {
 }
 
 #header-image {
-  max-height: 700px;
+  max-height: 900px;
   width: 100%;
 }
 
@@ -140,7 +148,6 @@ ul {
   -ms-align-items: center;
   align-items: center;
   width: 100%;
-
 }
 
 #profileImage {
@@ -411,7 +418,7 @@ ul {
 
   #about {
     min-height: 600px;
-    height: 90vh;
+    height: 40vh;
   }
 
   #profileImage {
@@ -427,7 +434,7 @@ ul {
 
   #skills {
     min-height: 600px;
-    height: 90vh;
+    height: 50vh;
   }
 
   #portfolio {
