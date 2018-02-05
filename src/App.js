@@ -2,14 +2,12 @@ import React, { Component } from 'react';
 import './App.css';
 
 // Import Components
-import Navigation from './components/Navbar'
+import Navigation from './components/Navigation'
 import Header from './components/Header'
 import About from './components/About'
 import Skills from './components/Skills'
 import Portfolio from './components/Portfolio'
 import Footer from './components/Footer'
-
-import Headroom from 'react-headroom';
 
 // Define App
 class App extends Component {
@@ -17,9 +15,7 @@ class App extends Component {
     return (
       <div className="App">
         <div className="container-fluid">
-          <Headroom>
-            <Navigation/>
-          </Headroom>
+          <Navigation/>
           <Header/>
           <About/>
           <Skills/>

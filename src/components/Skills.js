@@ -9,7 +9,7 @@ class Skills extends Component {
       <section id="skills" className="row">
         <div id="skillsHeader">
           <h2 className="headingWhite">Skills</h2>
-          <hr className="hUnderline"/>
+          <hr className="hUnderlineWhite"/>
         </div>
             <div id="skillListContainer">
               <ul id="skillsList">
