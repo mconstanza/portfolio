@@ -5,15 +5,15 @@ import { Navbar, Nav, NavItem, NavDropdown, MenuItem, Button } from 'react-boots
 class Navigation extends Component {
   render() {
     return (
-      <Navbar id="navbar" className="row">
+      <Navbar id="navbar" className="row" fluid="true">
         <Navbar.Header>
           <Navbar.Brand>
             <a id="navbarBrand" className="navbar-brand" href="#"><img alt="Glasses logo" id="navLogo" src="./img/glasses-128.png"/> M Constanza</a>
           </Navbar.Brand>
-          <Navbar.Toggle/>
+          {/* <Navbar.Toggle/> */}
         </Navbar.Header>
 
-        <Navbar.Collapse>
+        {/* <Navbar.Collapse>
           <Nav pullRight>
             <NavItem href="#about">About</NavItem>
             <NavItem href="#skills">Skills</NavItem>
@@ -41,7 +41,7 @@ class Navigation extends Component {
 
             </NavDropdown>
           </Nav>
-        </Navbar.Collapse>
+        </Navbar.Collapse> */}
 
       </Navbar>
     );

@@ -13,6 +13,7 @@ html, body {
 .row {
   margin-left: 0;
   margin-right: 0;
+  text-align: center;
 }
 
 ul {
@@ -125,7 +126,12 @@ ul {
 #about {
   display: flex;
   flex-direction: column;
+  text-align: center;
+}
 
+#aboutHeader {
+  text-align: center;
+  width: 100%;
 }
 
 #aboutContentDiv {
@@ -134,7 +140,7 @@ ul {
   -ms-align-items: center;
   align-items: center;
   width: 100%;
-  height: 100%;
+
 }
 
 #profileImage {
@@ -323,6 +329,7 @@ ul {
 /*FOOTER********************************************************/
 
 #footer {
+  text-align: center;
   margin-bottom: 0;
   border: none;
   min-height: 50px;
@@ -334,6 +341,7 @@ ul {
   /*background: -moz-linear-gradient(white 5%, #540000 90%); /* For Firefox 3.6 to 15 */*/
   /*background: linear-gradient(white 5%, #540000 90%); /* Standard syntax */*/
   font-family: 'Ubuntu Condensed', sans-serif;
+  width: 100%;
 }
 
 #footer .container-fluid {
