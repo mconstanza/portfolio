@@ -5,14 +5,14 @@
   "homepage": "https://mconstanza.github.io/portfolio",
   "devDependencies": {
     "gh-pages": "^0.12.0",
-    "react-scripts": "0.8.5"
+    "react-scripts": "5.0.1"
   },
   "dependencies": {
     "react": "^15.4.2",
     "react-bootstrap": "^0.32.1",
     "react-dom": "^15.4.2",
     "react-headroom": "^2.1.3",
-    "react-scripts": "^0.8.5"
+    "react-scripts": "^5.0.1"
   },
   "scripts": {
     "deploy": "npm run build&&gh-pages -d build",
